@@ -8,7 +8,7 @@ const Form = ({ formData, handleChange }) => {
     { label: "Petitioner Name 2 (Optional)", name: "petitionerName2" },
     { label: "Respondent Name", name: "respondentName" },
     { label: "PH-No", name: "phno" },
-    { label: "NOR-NO", name: "norNumber" },    
+    { label: "NOR-NO", name: "norNumber" },
     { label: "Father's Name", name: "fathersName" },
     { label: "Age", name: "age" },
     { label: "House Address", name: "houseAddress" },

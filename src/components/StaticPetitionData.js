@@ -210,4 +210,3 @@ export const StaticPetitionData3 = () => {
     </div>
   );
 };
-

@@ -1,0 +1,149 @@
+.landing-container {
+    background: linear-gradient(to right, #002e6e, #0047ab);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .page-header .logo-container {
+    margin-bottom: 20px;
+  }
+  
+  .logo-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  
+  
+  .intro-card {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .application-btn {
+    background-color: #e74c88;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .application-btn:hover {
+    background-color: #d43f6f;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  @layer base {
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 222.2 84% 4.9%;
+  
+      --card: 0 0% 100%;
+      --card-foreground: 222.2 84% 4.9%;
+  
+      --popover: 0 0% 100%;
+      --popover-foreground: 222.2 84% 4.9%;
+  
+      --primary: 222.2 47.4% 11.2%;
+      --primary-foreground: 210 40% 98%;
+  
+      --secondary: 210 40% 96.1%;
+      --secondary-foreground: 222.2 47.4% 11.2%;
+  
+      --muted: 210 40% 96.1%;
+      --muted-foreground: 215.4 16.3% 46.9%;
+  
+      --accent: 210 40% 96.1%;
+      --accent-foreground: 222.2 47.4% 11.2%;
+  
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 40% 98%;
+  
+      --border: 214.3 31.8% 91.4%;
+      --input: 214.3 31.8% 91.4%;
+      --ring: 222.2 84% 4.9%;
+  
+      --radius: 0.5rem;
+    }
+  }
+  
+  @layer base {
+    * {
+      @apply border-border;
+    }
+  
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
+  
+  /* Radiant Logo */
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .logo-gradient {
+    font-weight: bold;
+    font-size: 32px;
+    background: linear-gradient(45deg, #0047ab, #e74c88, #ff6b6b, #0047ab);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    animation: gradientAnimation 4s ease infinite;
+  }
+  
+  /* Chat bubbles */
+  .chat-bubble-user {
+    @apply bg-lawai-primary text-white p-4 rounded-tl-xl rounded-tr-xl rounded-br-xl max-w-3xl;
+  }
+  
+  .chat-bubble-ai {
+    @apply bg-white text-lawai-dark p-4 rounded-tl-xl rounded-tr-xl rounded-bl-xl max-w-3xl border border-gray-200 shadow-sm;
+  }
+  
+  /* Typing indicator */
+  .typing-indicator::after {
+    content: '';
+    animation: dots 1.5s infinite;
+  }
+  
+  @keyframes dots {
+    0%, 20% { content: '.'; }
+    40% { content: '..'; }
+    60%, 100% { content: '...'; }
+  }
+  .footer {
+    color: black;
+  }
+  
