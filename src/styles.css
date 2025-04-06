@@ -21,7 +21,7 @@
   background: white; /* Ensure the background is plain white */
   border: 1px solid #ddd; /* Add a border for structure */
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  https://meet.google.com/zgy-jxep-kff
 }
 .container {
   display: flex;
@@ -147,10 +147,10 @@ input[type="text"] {
 }
 
 /* Container for entire landing page */
-.landing-container {
-  text-align: center; /* Center aligns all child elements */
+/* .landing-container {
+  text-align: center; 
   padding: 20px;
-}
+} */
 
 /* Logo container styles */
 .logo-container {
@@ -180,12 +180,12 @@ input[type="text"] {
   margin-top: 20px; /* Space above the button */
 }
 
-.application-btn:hover {
-  background-color: #ff1493; /* Deep Pink on hover */}
+/* .application-btn:hover {
+  background-color: #ff1493; }
 .landing-container {
   text-align: center;
   padding: 20px;
-}
+} */
 
 .logo-container {
   display: flex;
@@ -241,14 +241,14 @@ body, html {
   background: #fff; /* Consistent background */
 }
 
-.landing-container {
+/* .landing-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   text-align: center;
-}
+} */
 
 
 .logo-container {

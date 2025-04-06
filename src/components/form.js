@@ -18,6 +18,8 @@ const Form = ({ formData, handleChange }) => {
     { label: "Lawyer Name", name: "lawyerName" },
     { label: "Dated", name: "dated" },
     { label: "Note 3 (Optional)", name: "note3" },
+    { label: "Fir translation", name: "firtranslation" }
+
   ];
 
   return (
